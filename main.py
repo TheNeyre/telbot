@@ -2,7 +2,7 @@ import requests
 import telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardButton, InlineKeyboardMarkup
 
-TOKEN = open('token.txt').readline()
+TOKEN = open('token.txt').readline() # ur token ^^
 bot = telebot.TeleBot(TOKEN)
 keyboard = InlineKeyboardMarkup(row_width=1)
 keyboard.add(InlineKeyboardButton('Чаво за бот?!', callback_data='info'))
